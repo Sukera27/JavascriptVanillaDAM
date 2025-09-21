@@ -21,4 +21,4 @@ const holaMundo3="Hola Vedruna";
 console.log(holaMundo3);
 
 //holaMundo3="Hola Vedruna costante";
-//console.log(holaMundo3);
+console.log(holaMundo3);
