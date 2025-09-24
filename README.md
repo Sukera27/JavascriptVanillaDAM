@@ -30,7 +30,6 @@ Los apuntes están organizados en diferentes bloques temáticos:
 4. **Objetos y Arrays**
    - Creación y manipulación
    - Métodos más comunes (`map`, `filter`, `reduce`)
-   - Desestructuración y spread/rest
 
 ---
 
