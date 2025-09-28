@@ -1,10 +1,10 @@
 
-let name ='Rafa'
+let firstName ='Rafa'
 let lastName = 'Mancina'
-console.log(name + ' ' + lastName);
+console.log(firstName + ' ' + lastName);
 
 //Concatenación
-let fullName = name + ' ' + lastName
+let fullName = firstName + ' ' + lastName
 console.log(fullName);
 
 //Longitud
@@ -31,5 +31,5 @@ console.log(fullName.replace('Rafa', 'Vedruna'));
 console.log(fullName.includes('Vedruna'));
 
 //Plantillas literales
-console.log(`Mi nombre es ${name} ${lastName}`);
+console.log(`Mi nombre es ${firstName} ${lastName}`);
 

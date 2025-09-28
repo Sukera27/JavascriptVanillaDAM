@@ -32,6 +32,9 @@ console.log(variable);
 
 let c=5;
 let d="5";
+
+console.log("--Operadores de comparación--");//false debido a que con dos iguales se compara el valor y no el tipo
+console.log(c===d);//false debido a que con tres iguales se compara el valor y el tipo
 console.log(c==d);//true debido a que con dos iguales se compara el valor y no el tipo
 console.log(c===d);//false debido a que con tres iguales se compara el valor y el tipo
 console.log(c!=d);//false c es igual a d por que se compara el valor y no el tipo

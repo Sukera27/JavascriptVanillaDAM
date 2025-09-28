@@ -1,7 +1,7 @@
 
 //Cadenas de texto
-let name="Vedruna";
-console.log(name);
+let nombre="Vedruna";
+console.log(nombre);
 
 //Números
 let age=20;
@@ -24,7 +24,7 @@ let undef;
 console.log(undef);
 
 //Mostrar tipo de datos- typeof
-console.log(typeof name);
+console.log(typeof nombre);
 console.log(typeof age);
 console.log(typeof pi);
 console.log(typeof isHuman);

@@ -59,3 +59,4 @@
 //31. Crea una funcion que reciba un Array de Strings y devuelve un nuevo array solo con las letras mayusculas del Array original
 
 //32. Crea una funcion que reciba un String y devuelva la candena al reves
+ 
