@@ -14,6 +14,10 @@ img {
   margin-top: 10px;
 }
 
+.imgclass {
+  border: 2px solid rebeccapurple;
+}
+
 .old-div {
   margin-top: 20px;
   background-color: #e0e0e0;

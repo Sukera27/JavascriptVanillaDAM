@@ -4,23 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" type="image/svg+xml" href="/vite.svg">
+  <link rel="icon">
   <script type="text/javascript" src="js/script.js" defer></script>
   <title>Manipulando el DOM en javascript</title>
 </head>
+
+
 <body>
  <h1 id="title">Manipulando el DOM en javascript</h1>
  <div class="main-div">
-  Imagen de ejemplo : <br>
+  Imagen js : <br>
   <img src="img/js.png" alt="Imagen Original">
  </div>
  <div class="old-div">
     Este div se eliminara
  </div>
+ <input type="text" id="filterInput" placeholder="Filtrar la lista">
  <ul class="lista">
-  <li>Elemento 1</li>
-  <li>Elemento 2</li>
-  <li>Elemento 3</li>
+  <li>Pedro Grimaldi</li>
+  <li>Sergio Castellano</li>
  </ul>
+ <div>
+  <input type="text" id="itemInput" placeholder="Introduce un item">
+  <button id="addButton">Añadir</button>
+  <ul id="dynamicList"></ul>
+ </div>
+ <button id="button">Pulsa aqui</button>
 </body>
 </html>
