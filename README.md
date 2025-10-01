@@ -66,14 +66,14 @@ Los apuntes están organizados en diferentes bloques temáticos:
 | Acción | Ejemplo |
 |--------|---------|
 | Eliminar elemento | ```let olddiv = document.querySelector(".old-div");document.body.removeChild(olddiv);``` |
-| Crear y añadir | ```js\nlet newdiv = document.createElement("div");\nnewdiv.innerText = "Esto es un div nuevo";\ndocument.body.appendChild(newdiv);``` |
+| Crear y añadir | ```let newdiv = document.createElement("div");\nnewdiv.innerText = "Esto es un div nuevo";document.body.appendChild(newdiv);``` |
 
 ---
 
 ## 🔹 Eventos
 | Acción | Ejemplo |
 |--------|---------|
-| Escuchar evento (click) | ```nlet button = document.querySelector("#button");button.addEventListener("click", () => {  alert("Has pulsado el botón");});``` |
+| Escuchar evento (click) | ```let button = document.querySelector("#button");button.addEventListener("click", () => {  alert("Has pulsado el botón");});``` |
 
 ---
 
