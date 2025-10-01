@@ -40,6 +40,46 @@ Los apuntes están organizados en diferentes bloques temáticos:
 
 ---
 
+# 📑 JavaScript DOM Cheat Sheet
+
+## 🔹 Selección de elementos
+| Método | Ejemplo | Descripción |
+|--------|---------|-------------|
+| `getElementById` | `document.getElementById("title")` | Selecciona por **ID** |
+| `querySelector` | `document.querySelector(".main-div")` | Selecciona el **primer** elemento que coincida con el selector CSS |
+| `querySelectorAll` | `document.querySelectorAll("ul.lista > li")` | Selecciona **todos** los elementos que coincidan (NodeList iterable) |
+
+---
+
+## 🔹 Modificación de elementos
+| Acción | Ejemplo | Descripción |
+|--------|---------|-------------|
+| Cambiar texto | `title.innerText = "Nuevo texto";` | Reemplaza el contenido textual |
+| Insertar HTML | `title.innerHTML = "<em>Texto con etiquetas</em>";` | Inserta HTML dentro del elemento |
+| Cambiar atributo | `image.setAttribute("src", "img/js2.png");` | Modifica un atributo del elemento |
+| Cambiar estilos | `mainDiv.style.backgroundColor = "#ffcc00";` | Cambia el estilo con CSS inline |
+| Añadir clase | `image.classList.add("imgclass");` | Añade una clase al elemento |
+
+---
+
+## 🔹 Crear y eliminar elementos
+| Acción | Ejemplo |
+|--------|---------|
+| Eliminar elemento | ```js\ nlet olddiv = document.querySelector(".old-div");\ndocument.body.removeChild(olddiv);\n``` |
+| Crear y añadir | ```js\nlet newdiv = document.createElement("div");\nnewdiv.innerText = "Esto es un div nuevo";\ndocument.body.appendChild(newdiv);\n``` |
+
+---
+
+## 🔹 Eventos
+| Acción | Ejemplo |
+|--------|---------|
+| Escuchar evento (click) | ```js\nlet button = document.querySelector("#button");\nbutton.addEventListener("click", () => {\n  alert("Has pulsado el botón");\n});\n``` |
+
+---
+
+✅ **Tip:** Usa `console.log()` para inspeccionar nodos y probar en la consola del navegador.  
+
+
 ## 🚀 Requisitos
 
 - Tener instalado [Node.js](https://nodejs.org/) (opcional para pruebas fuera del navegador).  
