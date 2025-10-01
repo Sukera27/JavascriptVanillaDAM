@@ -66,7 +66,7 @@ Los apuntes están organizados en diferentes bloques temáticos:
 | Acción | Ejemplo |
 |--------|---------|
 | Eliminar elemento | ```let olddiv = document.querySelector(".old-div");document.body.removeChild(olddiv);``` |
-| Crear y añadir | ```let newdiv = document.createElement("div");\nnewdiv.innerText = "Esto es un div nuevo";document.body.appendChild(newdiv);``` |
+| Crear y añadir | ```let newdiv = document.createElement("div"); newdiv.innerText = "Esto es un div nuevo";document.body.appendChild(newdiv);``` |
 
 ---
 
