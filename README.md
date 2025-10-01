@@ -40,7 +40,7 @@ Los apuntes están organizados en diferentes bloques temáticos:
 
 ---
 
-# 📑 JavaScript DOM Cheat Sheet
+# 📑 JavaScript DOM 
 
 ## 🔹 Selección de elementos
 | Método | Ejemplo | Descripción |
@@ -65,15 +65,15 @@ Los apuntes están organizados en diferentes bloques temáticos:
 ## 🔹 Crear y eliminar elementos
 | Acción | Ejemplo |
 |--------|---------|
-| Eliminar elemento | ```js\ nlet olddiv = document.querySelector(".old-div");\ndocument.body.removeChild(olddiv);\n``` |
-| Crear y añadir | ```js\nlet newdiv = document.createElement("div");\nnewdiv.innerText = "Esto es un div nuevo";\ndocument.body.appendChild(newdiv);\n``` |
+| Eliminar elemento | ```let olddiv = document.querySelector(".old-div");document.body.removeChild(olddiv);``` |
+| Crear y añadir | ```js\nlet newdiv = document.createElement("div");\nnewdiv.innerText = "Esto es un div nuevo";\ndocument.body.appendChild(newdiv);``` |
 
 ---
 
 ## 🔹 Eventos
 | Acción | Ejemplo |
 |--------|---------|
-| Escuchar evento (click) | ```js\nlet button = document.querySelector("#button");\nbutton.addEventListener("click", () => {\n  alert("Has pulsado el botón");\n});\n``` |
+| Escuchar evento (click) | ```nlet button = document.querySelector("#button");button.addEventListener("click", () => {  alert("Has pulsado el botón");});``` |
 
 ---
 
