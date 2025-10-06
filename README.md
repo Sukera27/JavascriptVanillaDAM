@@ -181,12 +181,12 @@ fetch('http://localhost:3000/alumnos/1', {
 
 ## ✅ Resumen rápido
 
-| Método | Acción            | Usa `body` | Efecto |
-|:-------|:------------------|:-----------|:--------|
-| **GET** | Leer datos        | ❌ | Obtiene información |
-| **POST** | Crear datos       | ✅ | Agrega un nuevo registro |
-| **PUT** | Reemplazar datos  | ✅ | Modifica completamente un registro |
-| **DELETE** | Eliminar datos  | ❌ | Borra un registro |
+| Método | Acción            | Efecto |
+|:-------|:------------------|:--------|
+| **GET** | Leer datos         | Obtiene información |
+| **POST** | Crear datos       | Agrega un nuevo registro |
+| **PUT** | Reemplazar datos   | Modifica completamente un registro |
+| **DELETE** | Eliminar datos   | Borra un registro |
 
 
 ## 🚀 Requisitos
