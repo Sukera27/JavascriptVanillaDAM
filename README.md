@@ -80,6 +80,115 @@ Los apuntes están organizados en diferentes bloques temáticos:
 ✅ **Tip:** Usa `console.log()` para inspeccionar nodos y probar en la consola del navegador.  
 
 
+# 🧭 FETCH en JavaScript
+
+## 📘 ¿Qué es `fetch()`?
+
+`fetch()` es una función nativa de JavaScript que permite hacer **peticiones HTTP** (GET, POST, PUT, DELETE, etc.) para comunicarse con **APIs** o **archivos** externos.
+
+Devuelve una **promesa** que se resuelve con un objeto `Response`.
+
+---
+
+## 🧩 Estructura básica
+
+```js
+fetch('https://example.com/api')
+  .then(response => response.json()) // convierte la respuesta a JSON
+  .then(data => console.log(data))   // usa los datos
+  .catch(error => console.error('Error:', error)); // maneja errores
+```
+
+### 🔍 Explicación:
+- `fetch(url)` → realiza la solicitud.  
+- `.then(response => response.json())` → convierte la respuesta a un objeto JavaScript.  
+- `.then(data => …)` → manipulas los datos.  
+- `.catch(error => …)` → maneja errores (por ejemplo, si no hay conexión).
+
+---
+
+## ⚙️ Métodos básicos de `fetch()`
+
+### 🟢 1. **GET** – Leer datos
+
+```js
+fetch('http://localhost:3000/alumnos')
+  .then(res => res.json())
+  .then(data => console.log('Alumnos:', data))
+  .catch(err => console.error(err));
+```
+
+📘 **Usos:** obtener información (por ejemplo, lista de usuarios o productos).
+
+---
+
+### 🟡 2. **POST** – Crear datos
+
+```js
+fetch('http://localhost:3000/alumnos', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({
+    nombre: 'Luis',
+    edad: 22,
+    curso: 'HTML'
+  })
+})
+  .then(res => res.json())
+  .then(data => console.log('Alumno creado:', data))
+  .catch(err => console.error(err));
+```
+
+📘 **Usos:** enviar nuevos datos al servidor (crear un registro).
+
+---
+
+### 🟠 3. **PUT** – Reemplazar datos
+
+```js
+fetch('http://localhost:3000/alumnos/1', {
+  method: 'PUT',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({
+    nombre: 'Ana María',
+    edad: 21,
+    curso: 'React'
+  })
+})
+  .then(res => res.json())
+  .then(data => console.log('Alumno actualizado (PUT):', data))
+  .catch(err => console.error(err));
+```
+
+📘 **Usos:** reemplaza completamente un recurso existente.
+
+
+---
+
+### 🔴 5. **DELETE** – Eliminar datos
+
+```js
+fetch('http://localhost:3000/alumnos/1', {
+  method: 'DELETE'
+})
+  .then(() => console.log('Alumno eliminado'))
+  .catch(err => console.error(err));
+```
+
+📘 **Usos:** eliminar un recurso del servidor.
+
+---
+
+## ✅ Resumen rápido
+
+| Método | Acción            | Usa `body` | Efecto |
+|:-------|:------------------|:-----------|:--------|
+| **GET** | Leer datos        | ❌ | Obtiene información |
+| **POST** | Crear datos       | ✅ | Agrega un nuevo registro |
+| **PUT** | Reemplazar datos  | ✅ | Modifica completamente un registro |
+| **DELETE** | Eliminar datos  | ❌ | Borra un registro |
+
+
 ## 🚀 Requisitos
 
 - Tener instalado [Node.js](https://nodejs.org/) (opcional para pruebas fuera del navegador).  

@@ -13,16 +13,19 @@ let mainDiv = document.querySelector(".main-div");
 console.log(mainDiv); 
 
 //Para una lista de elementos podriamos usar querySelectorAll
-//let title3 = document.querySelectorAll("ul.lista > li");
+let title3 = document.querySelectorAll("ul.lista > li");
 console.log(title3);
 
 //---Modicar elementos
 title.innerText = "Manipulando el DOM en Vedruna"; // modificamos el contenido del texto
-title.innerHTML ="<em>Manipulando el DOM en Vedruna por los alumnos de DAM</em>"; //incluimos etiquetas html dentro del texto
+title.innerHTML ="<em>Manipulando el DOM en Vedruna por los alumnos de DAM Pedro</em>"; //incluimos etiquetas html dentro del texto
 
-//let image = document.querySelector("img");// solo tenemos una imagen
+let image = document.querySelector("img");// solo tenemos una imagen
+
 image.setAttribute("src", "img/js2.png"); //setear el atributo src que indicamos en la  ruta de la imagen
+
 image.classList.add("imgclass"); // anadimos la clase imgclass
+
 mainDiv.style.backgroundColor = "#ffcc00";
 
 //Eliminar elementos
@@ -38,6 +41,7 @@ newdiv.style.backgroundColor = "#00ccff";//le añadimos un color
 
 //---Eventos
 let button = document.querySelector("#button");
+
 button.addEventListener("click", () => { //evento click con un callback a una funcion asincrona 
     alert("Has pulsado el boton");
     console.log("Has pulsado el boton");
@@ -64,11 +68,12 @@ input.value = "";
 
 //Ejercicio 2 : Filtrar la lista (filtra por texto, no por letra)
 let filterInput = document.querySelector("#filterInput");
+
 const itemlist = document.querySelector(".lista");
 
 
 filterInput.addEventListener("input", () => {
-  let filtro = filterInput.value.toLowerCase();
+  let filtro = filterInput.value.toLowerCase(); 
   let items = itemlist.getElementsByTagName("li");
 
   for (let item of items) {
