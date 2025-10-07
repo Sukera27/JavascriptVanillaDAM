@@ -1,0 +1,7 @@
+[
+  { "id": 1, "nombre": "Inception", "genero": "Ciencia Ficción" },
+  { "id": 2, "nombre": "Titanic", "genero": "Romance" },
+  { "id": 3, "nombre": "The Dark Knight", "genero": "Acción" },
+  { "id": 4, "nombre": "Forrest Gump", "genero": "Drama" },
+  { "id": 5, "nombre": "Toy Story", "genero": "Animación" }
+]
